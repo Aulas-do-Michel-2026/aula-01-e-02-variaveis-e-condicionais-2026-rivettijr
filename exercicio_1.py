@@ -19,3 +19,9 @@ Dica: Use inputs para receber os dados!
 Lembre de converter ele para o tipo necessário!
 Print na tela com "print"
 """
+
+primeira_nota = float(input("Digite a 1ª nota: "))
+segunda_nota = float(input("Digite a 2ª nota: "))
+terceira_nota = float(input("Digite a 3ª nota: "))
+
+print(f'Média das notas: {(primeira_nota + segunda_nota + terceira_nota)//3}')
