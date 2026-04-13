@@ -24,4 +24,10 @@ primeira_nota = float(input("Digite a primeira nota: "))
 segunda_nota = float(input("Digite a segunda nota: "))
 terceira_nota = float(input("Digite a terceira nota: "))
 
-print(f'Média das notas: {(primeira_nota + segunda_nota + terceira_nota)//3}')
+# Calculando a média
+media = (primeira_nota + segunda_nota + terceira_nota) / 3
+
+# Exibindo o resultado formatado com 2 casas decimais
+print(f"Média: {media:.2f}")
+
+
