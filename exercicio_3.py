@@ -17,3 +17,12 @@ Digite um número:
 
 Dica: Lembre do comando de resto da divisão inteira!
 """
+
+# Recebe o número do usuário
+numero = int(input("Digite um número: "))
+
+# Verifica se o resto da divisão por 2 é zero
+if numero % 2 == 0:
+    print("Par")
+else:
+    print("Ímpar")
