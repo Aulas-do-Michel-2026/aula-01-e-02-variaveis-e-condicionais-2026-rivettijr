@@ -37,3 +37,19 @@ Resposta:
 Sim
 
 """
+
+# Receber a descrição do cromossomo da variante
+cromossomo_variante = str(input("Digite o cromossomo: "))
+
+# Receber a descrição do cromossomo da variante
+posicao = int(input("Digite a posição: "))
+
+#Limites gene BRCA1
+inicio_brca1 = 41196312
+fim_brca1 = 41277500
+
+# Calculo sim x nao
+if cromossomo_variante == "chr17" and inicio_brca1 <= posicao <= fim_brca1:
+    print("Resultado: SIM")
+else:
+    print("Resultado: NÃO")
