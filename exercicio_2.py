@@ -17,4 +17,4 @@ Média: 140 mg
 peso = int(input('Digite o peso do paciente (Kg):'))
 dose_recomendada = 2 * peso
 
-print(f'Média: {dose_recomendada}')
+print(f'Média: {dose_recomendada} mg')
