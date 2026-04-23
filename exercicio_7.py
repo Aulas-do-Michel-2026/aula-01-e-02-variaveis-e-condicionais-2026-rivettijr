@@ -88,3 +88,30 @@ Esse exercício está com uma resolução no notebook da aula.
 
 Tente, se não der, olhe lá!
 """
+
+freq_populacional = float(input("Digite a frequencia populacional (em porcentagem): "))
+gene = input("Digite o gene: ")
+impacto = input("Digite a Impacto (ALTO ou BAIXO): ")   
+reads = int(input("Digite os reads: "))
+vaf = float(input("Digite a frequencia alélica (em porcentagem): "))
+
+# 1. Filtro de qualidade (Artefato)
+if reads < 10 or vaf < 20:
+    print("Não é relevante.")
+
+# 2. Se a qualidade estiver ok, checamos o impacto
+elif impacto == "ALTO":
+    # Regra da frequência populacional
+    if freq_populacional <= 5:
+        print("É relevante.")
+    else:
+        # Se for maior que 5%, só é relevante se for um dos genes especiais
+        if gene == "HFE" or gene == "MEFV" or gene == "GJB2":
+            print("É relevante.")
+        else:
+            print("Não é relevante.")
+
+# 3. Se o impacto não for ALTO
+else:
+    print("Não é relevante.")
+      
