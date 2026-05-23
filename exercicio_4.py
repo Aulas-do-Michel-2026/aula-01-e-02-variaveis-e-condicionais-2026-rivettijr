@@ -50,7 +50,7 @@ fim_brca1 = 41277500
 
 # Calculo sim x nao
 if cromossomo_variante == "chr17" and inicio_brca1 <= posicao <= fim_brca1:
-    print("Resultado: Sim")
+    print("Sim")
 else:
-    print("Resultado: Não")
+    print("Não")
     
