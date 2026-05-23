@@ -114,4 +114,3 @@ elif impacto == "ALTO":
 # 3. Se o impacto não for ALTO
 else:
     print("Não é relevante.")
-      
