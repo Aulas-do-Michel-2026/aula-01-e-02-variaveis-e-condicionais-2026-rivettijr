@@ -71,12 +71,12 @@ fim_brca1_hg38 = 43125483
 # Calculo sim x nao
 if cromossomo == "chr17" and genoma == "hg19":
     if inicio_brca1_hg19 <= posicao <= fim_brca1_hg19:           
-        print("Resultado: Sim")
+        print("Sim")
     else:
-        print("Resultado: Não")
+        print("Não")
 elif cromossomo == "chr17" and genoma == "hg38":
     if inicio_brca1_hg38 <= posicao <= fim_brca1_hg38:
-        print("Resultado: Sim")
+        print("Sim")
     else:
-        print("Resultado: Não")
+        print("Não")
     
